@@ -47,4 +47,13 @@ describe('ForagerBee class functionality', function() {
     expect(foragerBee.treasureChest).to.have.length(3);
   });
 
+  //added test
+  it('should return "yum, jelly!" when eat is called', function() {
+    expect(grub.eat()).to.equal('yum, jelly!');
+  });
+
+  it('should have a `fly` method that returns `WHEEE! Bzz!`', function() {
+    expect(foragerBee.fly()).to.equal('WHEEE! Bzz!');
+  });
+
 });

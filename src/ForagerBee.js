@@ -15,3 +15,9 @@ ForagerBee.prototype.forage = function(treasure) {
   this.treasureChest.push(treasure);
 };
 
+ForagerBee.prototype.fly = function() {
+  if (this.canFly) {
+    return 'WHEEE! Bzz!';
+  }
+  return 'My wings seem to be broken :\'(';
+};
