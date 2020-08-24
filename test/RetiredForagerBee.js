@@ -50,4 +50,13 @@ describe('RetiredForagerBee class functionality', function() {
     expect(retiredForager.treasureChest).to.have.length(2);
   });
 
+  //added test
+  it('should return "yum, jelly!" when eat is called', function() {
+    expect(grub.eat()).to.equal('yum, jelly!');
+  });
+
+  it('should have a `fly` method that returns `My wings seem to be broken :\'(`', function() {
+    expect(retiredForager.fly()).to.equal('My wings seem to be broken :\'(');
+  });
+
 });
