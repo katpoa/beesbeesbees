@@ -15,5 +15,7 @@ HoneyMakerBee.prototype.makeHoney = function() {
 };
 
 HoneyMakerBee.prototype.giveHoney = function() {
-  this.honeyPot--;
+  if (this.honeyPot > 0) {
+    this.honeyPot--;
+  }
 };

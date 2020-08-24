@@ -53,4 +53,17 @@ describe('HoneyMakerBee class functionality', function() {
     expect(honeyBee.honeyPot).to.equal(2);
   });
 
+  //added tests
+  it('should only `giveHoney` if the honeyPot is greater than 0', function() {
+    expect(honeyBee.giveHoney).to.be.a('function');
+    honeyBee.makeHoney();
+    honeyBee.giveHoney();
+    honeyBee.giveHoney();
+    expect(honeyBee.honeyPot).to.equal(0);
+  });
+
+  it('should return "yum, jelly!" when eat is called', function() {
+    expect(grub.eat()).to.equal('yum, jelly!');
+  });
+
 });
